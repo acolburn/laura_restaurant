@@ -160,3 +160,10 @@ h1 {
   border: 1px solid #16db99;
   z-index: 1000;
 }
+
+input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  padding: 3px;
+  margin: 5px;
+}
