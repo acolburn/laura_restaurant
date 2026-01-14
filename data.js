@@ -18,7 +18,7 @@ export const menuArray = [
     name: "English Muffin Pizza",
     price: 0.06,
     image: "images/english-muffin-pizza.png",
-    description: "description text goes here",
+    description: "English muffin, tomato, Velveeta ... what's not to like?",
 
     id: 2,
   },
