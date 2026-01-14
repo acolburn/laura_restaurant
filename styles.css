@@ -4,6 +4,10 @@ body {
   font-family: "Smythe", system-ui;
 }
 
+main {
+  background: white;
+}
+
 h1 {
   text-align: center;
 }
@@ -122,7 +126,7 @@ h1 {
   cursor: pointer;
 }
 
-.btn-order {
+#btn-order {
   background: #16db99;
   color: whitesmoke;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -131,4 +135,28 @@ h1 {
   border-color: #16db99;
   width: 100%;
   height: 50px;
+}
+
+/* Charge Card Section */
+#charge-card {
+  display: none;
+}
+
+#form-charge-card {
+  background: white;
+  /* next 4 lines center container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 350px;
+  height: 400px;
+  border: 1px solid #16db99;
+  z-index: 1000;
 }

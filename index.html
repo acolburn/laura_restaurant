@@ -13,14 +13,55 @@
     />
   </head>
   <body>
-    <div class="banner">
-      <img src="images/banner.jpg" />
-      <div class="banner-text">Elmo's Eatery</div>
-      <div class="banner-text-2">The finest food you can get for a quarter</div>
-    </div>
+    <main id="main">
+      <div class="banner">
+        <img src="images/banner.jpg" />
+        <div class="banner-text">Elmo's Eatery</div>
+        <div class="banner-text-2">
+          The finest food you can get for a quarter
+        </div>
+      </div>
 
-    <div id="menu"></div>
-    <div id="total" class="hidden"></div>
+      <div id="menu"></div>
+      <div id="total" class="hidden"></div>
+    </main>
+
+    <div id="charge-card" class="charge-card">
+      <div id="form-charge-card">
+        <h1>Enter Card Details</h1>
+        <form>
+          <div>
+            <input
+              type="text"
+              id="nameField"
+              placeholder="Enter your name"
+              required
+            />
+            <div id="warning" class="warning hidden">
+              This field cannot be left blank.
+            </div>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="cardNumberField"
+              placeholder="Card number"
+              required
+            />
+            <div id="warning" class="warning hidden">
+              This field cannot be left blank.
+            </div>
+          </div>
+          <div>
+            <input type="text" id="cvvField" placeholder="CVV" required />
+            <div id="warning" class="warning hidden">
+              This field cannot be left blank.
+            </div>
+          </div>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
 
     <script src="index.js" type="module"></script>
   </body>

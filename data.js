@@ -3,14 +3,14 @@ export const menuArray = [
     name: "Pu-Pu Platter",
     price: 0.15,
     image: "images/pu-pu.webp",
-    description: "description text goes here",
+    description: "The name's more fun than the actual dish",
     id: 0,
   },
   {
     name: "Tom Special",
     price: 0.04,
     image: "images/bloody-mary.webp",
-    description: "description text goes here",
+    description: "It's a Bloody Mary without the fun part",
 
     id: 1,
   },

@@ -2,10 +2,13 @@ import { menuArray } from "./data.js";
 
 const menuDiv = document.getElementById("menu");
 const totalDiv = document.getElementById("total");
+const chargeCardDiv = document.getElementById("charge-card");
+const mainDiv = document.getElementById("main");
 let orders = [];
 
 document.addEventListener("click", function (event) {
-  // Only + buttons have data-name values
+  // This statement selects the + buttons because
+  // only + buttons have data-name values
   // so next line truthy only when + button clicked
   if (event.target.dataset.name) {
     const order = menuArray.filter(
@@ -16,6 +19,14 @@ document.addEventListener("click", function (event) {
     orders.push(order[0]);
     totalDiv.classList.remove("hidden");
   }
+
+  // Can't have normal btnOrder.getEventListener()
+  // because btnOrder doesn't exist when page loaded; error thrown
+  if (event.target.matches("#btn-order")) {
+    mainDiv.style.background = "lightgrey";
+    chargeCardDiv.style.display = "flex";
+  }
+
   render();
 });
 
@@ -55,7 +66,7 @@ function render() {
   yourOrderHtml += `<hr><div class="item-container"><div class="item">Total price:</div>
   <div class="price">${orderTotal}</div></div>`;
 
-  yourOrderHtml += `<button class="btn-order">Complete Order</button>`;
+  yourOrderHtml += `<button id="btn-order">Complete Order</button>`;
 
   totalDiv.innerHTML += yourOrderHtml;
 }
