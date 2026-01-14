@@ -1,0 +1,134 @@
+body {
+  width: 600px;
+  margin: auto;
+  font-family: "Smythe", system-ui;
+}
+
+h1 {
+  text-align: center;
+}
+
+.banner {
+  position: relative;
+  /* width: 100%; */
+  /* height: 170px; */
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: 170px; /* match banner */
+  object-fit: cover;
+}
+
+.banner-text,
+.banner-text-2 {
+  font-weight: 800;
+  color: black;
+  position: absolute;
+  right: 30px;
+}
+
+.banner-text {
+  font-size: 39px;
+  top: 1px;
+}
+
+.banner-text-2 {
+  font-size: 23px;
+  top: 42px;
+}
+
+.menu-row {
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.menu-img {
+  width: 80px;
+  height: 80px;
+}
+
+.menu-item-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  /* align-items: start; */
+  /* justify-content: space-evenly; */
+}
+
+.menu-item-name {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.menu-item-description {
+  color: grey;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.menu-item-price {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.btn-add {
+  border: 1px solid grey;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Total section  */
+
+.hidden {
+  display: none;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between; /* Aligns items within the container */
+  padding: 10px 0; /* Adds some padding for spacing */
+  margin-left: 12px;
+  margin-right: 20px;
+}
+
+.item,
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item {
+  text-align: left; /* Aligns text of items to the left */
+}
+
+.price {
+  text-align: right; /* Aligns text of prices to the right */
+}
+
+.btn-remove {
+  color: grey;
+  border: 0px;
+  cursor: pointer;
+}
+
+.btn-order {
+  background: #16db99;
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  border-color: #16db99;
+  width: 100%;
+  height: 50px;
+}
