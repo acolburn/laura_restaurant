@@ -126,14 +126,17 @@ h1 {
   cursor: pointer;
 }
 
-#btn-order {
+#btn-order,
+.btn-order {
+  margin: 0 auto;
+  display: block;
   background: #16db99;
   color: whitesmoke;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 800;
   border-color: #16db99;
-  width: 100%;
+  width: 99%;
   height: 50px;
 }
 
@@ -144,6 +147,7 @@ h1 {
 
 #form-charge-card {
   background: white;
+  padding: 15px;
   /* next 4 lines center container */
   position: absolute;
   top: 50%;
