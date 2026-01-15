@@ -26,39 +26,24 @@
       <div id="total" class="hidden"></div>
     </main>
 
-    <div id="charge-card" class="charge-card">
+    <div id="charge-card-container" class="charge-card">
       <div id="form-charge-card">
         <h1>Enter Card Details</h1>
         <form>
-          <div>
-            <input
-              type="text"
-              id="nameField"
-              placeholder="Enter your name"
-              required
-            />
-            <div id="warning" class="warning hidden">
-              This field cannot be left blank.
-            </div>
-          </div>
-          <div>
-            <input
-              type="text"
-              id="cardNumberField"
-              placeholder="Card number"
-              required
-            />
-            <div id="warning" class="warning hidden">
-              This field cannot be left blank.
-            </div>
-          </div>
-          <div>
-            <input type="text" id="cvvField" placeholder="CVV" required />
-            <div id="warning" class="warning hidden">
-              This field cannot be left blank.
-            </div>
-          </div>
-          <div><input type="submit" class="btn-order" /></div>
+          <input
+            type="text"
+            id="nameField"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="text"
+            id="cardNumberField"
+            placeholder="Card number"
+            required
+          />
+          <input type="text" id="cvvField" placeholder="CVV" required />
+          <input type="submit" id="btn-submit" />
         </form>
       </div>
     </div>

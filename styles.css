@@ -12,16 +12,16 @@ h1 {
   text-align: center;
 }
 
+/* Banner section */
+
 .banner {
   position: relative;
-  /* width: 100%; */
-  /* height: 170px; */
 }
 
 .banner img {
   display: block;
   width: 100%;
-  height: 170px; /* match banner */
+  height: 170px;
   object-fit: cover;
 }
 
@@ -43,10 +43,12 @@ h1 {
   top: 42px;
 }
 
+/* Menu section */
+
 .menu-row {
   display: flex;
   align-items: center;
-  padding: 30px 0px;
+  padding: 30px 5px;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -56,11 +58,10 @@ h1 {
 }
 
 .menu-item-info {
+  /* parent container for item name, description, price column  */
   display: flex;
   flex-direction: column;
   margin-left: 12px;
-  /* align-items: start; */
-  /* justify-content: space-evenly; */
 }
 
 .menu-item-name {
@@ -120,32 +121,37 @@ h1 {
   text-align: right; /* Aligns text of prices to the right */
 }
 
-.btn-remove {
+#btn-remove {
   color: grey;
   border: 0px;
   cursor: pointer;
 }
 
-#btn-order,
-.btn-order {
+#btn-order {
   margin: 0 auto;
   display: block;
+  width: 99%;
+  height: 50px;
+}
+
+#btn-order,
+#btn-submit {
   background: #16db99;
   color: whitesmoke;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 800;
   border-color: #16db99;
-  width: 99%;
-  height: 50px;
+  cursor: pointer;
 }
 
 /* Charge Card Section */
-#charge-card {
+#charge-card-container {
   display: none;
 }
 
 #form-charge-card {
+  box-sizing: border-box;
   background: white;
   padding: 15px;
   /* next 4 lines center container */
@@ -153,21 +159,23 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* next 5 lines center items in container */
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
-  width: 350px;
-  height: 400px;
-  border: 1px solid #16db99;
+  /* make sure container displays on top of other containers */
   z-index: 1000;
 }
 
-input {
+#form-charge-card input {
+  /* assure padding, margins, and border counted as width */
+  box-sizing: border-box;
+  width: 100%;
+  /* each item takes full row */
+  display: block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
-  padding: 3px;
-  margin: 5px;
+  margin-bottom: 10px;
 }
