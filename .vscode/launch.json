@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Brave - localhost:5500",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:5500",
+      "runtimeExecutable": "/usr/bin/brave-browser",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
